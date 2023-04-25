@@ -1,7 +1,10 @@
 body {
   padding: 0;
   margin: 0;
-  background-image: url('./images/honeycomb.png');
+  background: rgb(253, 245, 235) url('./images/honeycomb.png');
+  background-repeat:repeat-y;
+  background-position: center;
+  background-size:cover;
 }
 
 .navbar {
@@ -10,7 +13,7 @@ body {
   justify-content: center;
   background-color: #fbd466;
   text-shadow: 2px 2px 4px black;
-  box-shadow: 2px 2px 5px #fbd466;
+  box-shadow: 2px 2px 5px #9e853f;
 }
 
 .navbar--logo {
@@ -33,9 +36,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 30px;
-  height: 500px;
+  padding-top: 75px;
+  height: 50em;
   width: auto;
+}
+
+@media(max-width:500px){
+  .page {
+    /* background-color: red; */
+    padding-top: 15%;
+  }
 }
 
 .login {
@@ -44,17 +54,20 @@ body {
   justify-content: space-around;
   border: 3px;
   border-style: solid;
+  border-color: #fbd466;
   border-radius: 8px;
   width: 300px;
-  height: 200px;
+  height: 14em;
   padding: 10px;
   background-color: #fbd466;
+  box-shadow: 2px 2px 5px #99813d;
 }
 
 .login--field {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
+  height: 80%;
+  justify-content: space-around;
 
 }
 
@@ -63,8 +76,9 @@ body {
   border-radius: 5px;
   border: none;
   height: 40px;
-  box-shadow: 2px 2px 5px;
+  box-shadow: 2px 2px 1px;
   text-indent: 10px;
+  /* margin-bottom: .5em; */
 }
 
 .login--field > button {
@@ -72,7 +86,7 @@ body {
   border-radius: 5px;
   border: none;
   height: 40px;
-  box-shadow: 2px 2px 5px;
+  box-shadow: 2px 2px 2px;
   cursor: pointer;
 }
 
